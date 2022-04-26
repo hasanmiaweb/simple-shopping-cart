@@ -77,8 +77,10 @@ const Index = () => {
         
         </table>
 
-        <h1>Total Price: ({total}) BDT</h1>
-        <button className="payBtn">Pay Now</button>
+      {
+        total > 0  && <div><h1>Total Price: ({total}) BDT</h1>
+        <button className="payBtn">Pay Now</button></div>
+      }
       </div>
     </div>
   );
