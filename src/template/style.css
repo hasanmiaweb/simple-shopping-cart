@@ -1,0 +1,48 @@
+.title{
+    text-align: center;
+    color: rgb(97 100 102);
+    font-size: 33px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  button.btnPlus {
+    border: 1px solid #dddd;
+    padding: 6px 29px;
+    background: #52c174;
+    font-size: 18px;
+    color: white;
+    border-radius: 10px;
+}
+  button.btnMinus {
+    border: 1px solid #dddd;
+    padding: 6px 29px;
+    background: #f82d09;
+    font-size: 18px;
+    color: white;
+    border-radius: 10px;
+}
+
+button.btnPlus:hover {
+    background: #3bbd62;
+    transition: 0.5s;
+    border: 1px solid #cbcbcbdd;
+}
+button.btnMinus:hover {
+    background: #e23500;
+    transition: 0.5s;
+    border: 1px solid #cbcbcbdd;
+}
