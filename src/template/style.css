@@ -46,3 +46,13 @@ button.btnMinus:hover {
     transition: 0.5s;
     border: 1px solid #cbcbcbdd;
 }
+
+button.payBtn {
+  padding: 15px 30px;
+  background: red;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}

@@ -28,6 +28,7 @@ const Index = () => {
       total:0
     }))
   )
+
   
   const incrementQuantity = (id) => {
     const newProducts = products.map((product)=>{
@@ -49,11 +50,13 @@ const Index = () => {
     }))
   }
 
+  const total = products.reduce((acc, cur)=> acc + cur.total, 0)
 
   return (
     <div className="title">
       <h1>Simple-Shopping-Cart Application</h1>
       <strong>Product List</strong>
+    
       <hr />
       <div className="shopping_list_data">
         <table>
@@ -71,7 +74,11 @@ const Index = () => {
               <TableRow key={product.id} {...product} increment={()=>incrementQuantity(product.id)} dcrement={()=>DcrementQuantity(product.id)} />
             ))}
           </tbody>
+        
         </table>
+
+        <h1>Total Price: ({total}) BDT</h1>
+        <button className="payBtn">Pay Now</button>
       </div>
     </div>
   );
